@@ -1,6 +1,6 @@
 module GitDiffParser
   class Line
-    attr_reader :number, :patch_position
+    attr_reader :number, :patch_position, :content
 
     def initialize(options = {})
       fail(ArgumentError('number is required')) unless options[:number]
